@@ -1,0 +1,66 @@
+.languages {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+.containerLanguages {
+    position: relative;
+}
+
+.actualLanguage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid dimgray;
+    border-radius: 4px;
+    padding: 3px 0 5px 3px;
+}
+
+.actualLanguage.show {
+    padding-bottom: 5px;
+    border-bottom: none;
+}
+
+.actualLanguage img {
+    width: 24px;
+}
+
+.arrowLanguage {
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+    height: 10px;
+}
+
+.alternative {
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    list-style: none;
+    width: 49px;
+    background-color: black;
+    border: 3px solid dimgray;
+    border-top: none;
+    padding: 10px 0px 3px 8px;
+    border-radius: 4px;
+}
+
+.alternative.show {
+    display: block;
+}
+
+.alternative.show li {
+    cursor: pointer;
+}
+
+.alternative.show li img {
+    width: 24px;
+}

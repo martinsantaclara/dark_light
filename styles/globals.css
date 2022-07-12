@@ -1,16 +1,90 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    position: relative;
+}
+
+.containerLanguages {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+}
+
+.containerLanguages.show {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.actualLanguage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid dimgray;
+    border-radius: 4px; */
+    /* padding: 3px 0 5px 3px; */
+    padding: 5px 0 5px 10px;
+}
+
+.containerLanguages.show .actualLanguage {
+    padding-bottom: 5px;
+    /* border-bottom: none; */
+}
+
+.actualLanguage img {
+    width: 24px;
+}
+
+.arrowLanguage {
+    /* margin-left: 5px; */
+    color: black;
+    cursor: pointer;
+    height: 10px;
+}
+
+.alternative {
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    list-style: none;
+    width: 60px;
+    background-color: white;
+    /* border-top: none; */
+    border-radius: 0 0 10px 10px;
+    padding-left: 10px;
+}
+
+.containerLanguages.show .alternative {
+    display: block;
+}
+
+.containerLanguages.show .alternative li {
+    cursor: pointer;
+}
+
+.containerLanguages.show .alternative li img {
+    width: 24px;
 }
